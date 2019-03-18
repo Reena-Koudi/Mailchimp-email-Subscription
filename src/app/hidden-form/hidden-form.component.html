@@ -1,10 +1,3 @@
-<!-- <form [formGroup]="hiddenform" id="mc-embedded-subscribe-form" action="https://wojooh.us19.list-manage.com/subscribe/post?u=4a0a6af22e69eb2da0f8f249c&amp;id=cd694b89be" method="post">
-    <label>Email:
-        <input type="email" name="b_4a0a6af22e69eb2da0f8f249c_cd694b89be" [value]="email" formControlName="email" required>
-        <button #submit type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Submit</button>
-      </label>
-</form> -->
-
 
 <div id="mc_embed_signup">
   <form [formGroup]="hiddenform" id="mc-embedded-subscribe-form" [action]=apiUrl method="post">
@@ -20,30 +13,10 @@
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" [name]="hiddenInput"
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" [name]="hiddenInputName"
           tabindex="-1" value=""></div>
       <div class="clear"><input #submit type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
           class="button"></div>
     </div>
   </form>
 </div>
-
-<!-- <div id="mc_embed_signup">
-    <form action="https://wojooh.us19.list-manage.com/subscribe/post?u=4a0a6af22e69eb2da0f8f249c&amp;id=cd694b89be" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-      <h2>Subscribe to our mailing list</h2>
-    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-    </label>
-      <input type="email" [value]="email" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4a0a6af22e69eb2da0f8f249c_cd694b89be" tabindex="-1" value=""></div>
-        <div class="clear"><input #submit type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-    </div> -->

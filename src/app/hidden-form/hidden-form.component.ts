@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { environment } from '../environment';
-import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -11,11 +10,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HiddenFormComponent {
   apiUrl = environment.mailchimp.apiUrl;
-  hiddenInput = environment.mailchimp.hiddenInput;
+  hiddenInputName = environment.mailchimp.hiddenInputName;
   email: string;
   @ViewChild('submit')
   submitBtn: ElementRef<HTMLInputElement>;
-  http: any;
   constructor(private fb: FormBuilder) {
     this.email = '';
   }
@@ -25,7 +23,6 @@ export class HiddenFormComponent {
   });
 
  onSubmit() {
-  //  return this.http.post(this.apiUrl);
   console.log(this.submitBtn.nativeElement);
  }
 

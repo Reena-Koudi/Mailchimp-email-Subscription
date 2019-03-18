@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'mailchimp-demo';
   showMsg = false;
   apiUrl = environment.mailchimp.apiUrl;
-  hiddenInput = environment.mailchimp.hiddenInput;
+  hiddenInputName = environment.mailchimp.hiddenInputName;
 
   @ViewChild(HiddenFormComponent)
   hidden: HiddenFormComponent;
@@ -37,7 +37,6 @@ export class AppComponent {
     console.log(this.hidden.email);
     this.showMsg = true;
     this.emailform.reset();
-    this.showMsg = false;
   }
 }
 
